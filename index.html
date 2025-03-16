@@ -123,7 +123,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/teaser.png" alt="Teaser Image" />
+      <img src="static/images/teaser.png" alt="Teaser Image" style="width: 70%;"/>
       <h2 class="subtitle has-text-centered">
         Given a textual description of the spatial relationship between two objects, our method models OOR, representing their relative poses and scales according to the text. We obtain OOR samples using off-the-shelf models and a proposed mesh registration method, then learn their distribution through diffusion. During inference, our OOR diffusion model generates OOR conditioned on the text input.
       </h2>
@@ -154,7 +154,8 @@
       <h2 class="title is-3">Method Overview</h2>
       <img src="static/images/method.png" alt="Method Image" style="width: 70%;"/>
       <h2 class="subtitle has-text-centered">
-        We present a method to model object-obejct spatial relationships (<i>OOR</i>), which represent the relative pose and scale of two objects based on textual descriptions. We first synthetically generate diverse 3D OOR samples and then learn their distribution through our OOR diffusion model. Our OOR diffusion model enables the generation of plausible spatial relationships conditioned on textual input.
+        <b>OOR Sample Generation.</b> For a given text prompt related to an object pair, we obtain multi-view images and point clouds using off-the-shelf models. Then, we lift pixel features to obtain 3D point features. We repeat the same process for the rendered images of collected meshes. Finally, we perform Procrustes analysis with RANSAC to estimate the relative pose and scale of each object.
+        <br><b>OOR Diffusion Training.</b> Our OOR diffusion generates OOR samples by taking the context $\mathbf{c}$, base object category $\mathcal{B}$, and target object category $\mathcal{T}$ as text conditions.
       </h2>
     </div>
   </div>
