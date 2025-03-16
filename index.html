@@ -159,21 +159,17 @@
   <div class="hero-body">
     <div class="container has-text-centered">
       <h2 class="title is-3">Method Overview</h2>
-      <img src="static/images/method.png" alt="Method Image" style="width: 70%;"/>
+      <img src="static/images/method_db_gen.png" alt="Method Image" style="width: 70%;"/>
 
-      <h2 class="subtitle" style="max-width: 900px; margin: 0 auto; text-align: center;">
-        <b>OOR Sample Generation.</b>
-      </h2>
       <div style="max-width: 900px; margin: 0 auto; text-align: center; line-height: 1.6;">
         For a given text prompt related to an object pair, we obtain multi-view images and point clouds using off-the-shelf models.
         Then, we lift pixel features to obtain 3D point features. We repeat the same process for the rendered images of collected meshes.
         Finally, we perform Procrustes analysis with RANSAC to estimate the relative pose and scale of each object.
       </div>
+
+      <img src="static/images/method_diffusion.png" alt="Method Image" style="width: 70%;"/>
     
-      <h2 class="subtitle" style="max-width: 900px; margin: 30px auto 10px auto; text-align: center;">
-        <b>OOR Diffusion Training.</b>
-      </h2>
-      <div style="max-width: 900px; margin: 0 auto; text-align: center; line-height: 1.6;">
+      <div style="max-width: 1000px; margin: 0 auto; text-align: center; line-height: 1.6;">
         Our OOR diffusion generates OOR samples by taking the context 
         \( \mathbf{c} \), base object category \( \mathcal{B} \), 
         and target object category \( \mathcal{T} \) as text conditions.
