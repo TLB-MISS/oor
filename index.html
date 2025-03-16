@@ -48,6 +48,13 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <script type="text/javascript" async
+  src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async
+    id="MathJax-script"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
 </head>
 <body>
 
@@ -123,7 +130,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/teaser.png" alt="Teaser Image" style="width: 70%;"/>
+      <img src="static/images/teaser.png" alt="Teaser Image"/>
       <h2 class="subtitle has-text-centered">
         Given a textual description of the spatial relationship between two objects, our method models OOR, representing their relative poses and scales according to the text. We obtain OOR samples using off-the-shelf models and a proposed mesh registration method, then learn their distribution through diffusion. During inference, our OOR diffusion model generates OOR conditioned on the text input.
       </h2>
@@ -157,6 +164,37 @@
         <b>OOR Sample Generation.</b> For a given text prompt related to an object pair, we obtain multi-view images and point clouds using off-the-shelf models. Then, we lift pixel features to obtain 3D point features. We repeat the same process for the rendered images of collected meshes. Finally, we perform Procrustes analysis with RANSAC to estimate the relative pose and scale of each object.
         <br><b>OOR Diffusion Training.</b> Our OOR diffusion generates OOR samples by taking the context $\mathbf{c}$, base object category $\mathcal{B}$, and target object category $\mathcal{T}$ as text conditions.
       </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero"></section>
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Method Overview</h2>
+      <img src="static/images/method.png" alt="Method Image" style="width: 70%;"/>
+
+      <h2 class="subtitle has-text-centered">
+        <b>OOR Sample Generation.</b>
+      </h2>
+      <p>
+        For a given text prompt related to an object pair, we obtain multi-view images and point clouds using off-the-shelf models.
+      </p>
+      <p>
+        Then, we lift pixel features to obtain 3D point features. We repeat the same process for the rendered images of collected meshes.
+      </p>
+      <p>
+        Finally, we perform Procrustes analysis with RANSAC to estimate the relative pose and scale of each object.
+      </p>
+
+      <h2 class="subtitle has-text-centered">
+        <b>OOR Diffusion Training.</b>
+      </h2>
+      <p>
+        Our OOR diffusion generates OOR samples by taking the context 
+        \( \mathbf{c} \), base object category \( \mathcal{B} \), 
+        and target object category \( \mathcal{T} \) as text conditions.
+      </p>
     </div>
   </div>
 </section>
