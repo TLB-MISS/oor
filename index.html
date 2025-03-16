@@ -125,6 +125,35 @@
     <div class="hero-body">
       <img src="static/images/teaser.png" alt="Teaser Image" />
       <h2 class="subtitle has-text-centered">
+        Given a textual description of the spatial relationship between two objects, our method models <i>OOR</i>, representing their relative poses and scales according to the text. We obtain OOR samples using off-the-shelf models and a proposed mesh registration method, then learn their distribution through diffusion. During inference, our OOR diffusion model generates OOR conditioned on the text input.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present a method for learning 3D spatial relationships between object pairs, referred to as object-object spatial relationships (<i>OOR</i>), by leveraging synthetically generated 3D samples from pre-trained 2D diffusion models. We hypothesize that images synthesized by 2D diffusion models inherently capture plausible and realistic OOR cues, enabling efficient ways to collect a 3D dataset to learn OOR for various unbounded object categories. Our approach begins by synthesizing diverse images that capture plausible OOR cues, which we then uplift into 3D samples. Leveraging our diverse collection of plausible 3D samples for the object pairs, we train a score-based OOR diffusion model to learn the distribution of their relative spatial relationships. Additionally, we extend our pairwise OOR to multi-object OOR by enforcing consistency across pairwise relations. Extensive experiments demonstrate the robustness of our method across various object-object spatial relationships, along with its applicability to real-world 3D scene arrangement tasks using the OOR diffusion model.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Method -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Method Overview</h2>
+      <img src="static/images/method.png" alt="Method Image" />
+      <h2 class="subtitle has-text-centered">
         We present a method to model object-obejct spatial relationships (<i>OOR</i>), which represent the relative pose and scale of two objects based on textual descriptions. We first synthetically generate diverse 3D OOR samples and then learn their distribution through our OOR diffusion model. Our OOR diffusion model enables the generation of plausible spatial relationships conditioned on textual input.
       </h2>
     </div>
@@ -169,37 +198,6 @@
 </div>
 </section>
 <!-- End image carousel -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We present a method for learning 3D spatial relationships between object pairs, referred to as object-object spatial relationships (OOR), by leveraging synthetically generated 3D samples from pre-trained 2D diffusion models. We hypothesize that images synthesized by 2D diffusion models inherently capture plausible and realistic OOR cues, enabling efficient ways to collect a 3D dataset to learn OOR for various unbounded object categories. Our approach begins by synthesizing diverse images that capture plausible OOR cues, which we then uplift into 3D samples. Leveraging our diverse collection of plausible 3D samples for the object pairs, we train a score-based OOR diffusion model to learn the distribution of their relative spatial relationships. Additionally, we extend our pairwise OOR to multi-object OOR by enforcing consistency across pairwise relations. Extensive experiments demonstrate the robustness of our method across various object-object spatial relationships, along with its applicability to real-world 3D scene arrangement tasks using the OOR diffusion model.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Method -->
-<section class="hero"></section>
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h2 class="title is-3">Method Overview</h2>
-      <img src="static/images/teaser.png" alt="Teaser Image" />
-      <h2 class="subtitle has-text-centered">
-        We present a method to model object-obejct spatial relationships (<i>OOR</i>), which represent the relative pose and scale of two objects based on textual descriptions. We first synthetically generate diverse 3D OOR samples and then learn their distribution through our OOR diffusion model. Our OOR diffusion model enables the generation of plausible spatial relationships conditioned on textual input.
-      </h2>
-    </div>
-  </div>
-</section>
 
 
 <!-- Video presentation -->
