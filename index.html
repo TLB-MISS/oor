@@ -188,10 +188,13 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
-          <div class="publication-video">
+          <h2 class="subtitle has-text-centered">
+            TBA
+          </h2>
+          <!--<div class="publication-video">-->
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+            <!--<iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>-->
         </div>
       </div>
     </div>
@@ -205,7 +208,7 @@
       <h2 class="title is-3">Results</h2>
       
       <!-- Pairwise OOR Section -->
-      <h3 class="title is-4">Pairwise OOR</h3>
+      <h3 class="title is-4" style="margin-top: 60px;">Denoising Process of Pairwise OOR Generation</h3>
       <div id="pairwise-carousel" class="carousel results-carousel">
         <!-- Loop: 각 동영상 항목 -->
         <div class="item">
@@ -221,10 +224,31 @@
           </video>
           <h2 class="subtitle has-text-centered"><i>A knife cuts an apple.</i></h2>
         </div>
+
+        <div class="item">
+          <video controls autoplay loop muted>
+            <source src="static/videos/steak_fork_6.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>A fork pokes a steak.</i></h2>
+        </div>
+
+        <div class="item">
+          <video controls autoplay loop muted>
+            <source src="static/videos/toilet_plunger_4.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>A plunger unclogs a toilet.</i></h2>
+        </div>
+
+        <div class="item">
+          <video controls autoplay loop muted>
+            <source src="static/videos/desk_monitor_68.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>A monitor is positioned on a desk.</i></h2>
+        </div>
       </div>
 
       <!-- Multi-object OOR Section -->
-      <h3 class="title is-4" style="margin-top: 60px;">Multi-object OOR</h3>
+      <h3 class="title is-4" style="margin-top: 60px;">Denoising Process of Multi-object OOR Generation</h3>
       <div id="multiobject-carousel" class="carousel results-carousel">
         <!-- Loop: 각 동영상 항목 -->
         <div class="item">
@@ -247,16 +271,22 @@
       <div id="scene-editing-carousel" class="carousel results-carousel">
         <!-- Loop: 각 동영상 항목 -->
         <div class="item">
-          <video controls autoplay loop muted>
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+          <video controls autoplay loop muted style="height: 800px; width: auto; object-fit: contain;">
+            <source src="static/videos/denoising_process.mp4" type="video/mp4">
           </video>
-          <h2 class="subtitle has-text-centered">Third video description.</h2>
+          <h2 class="subtitle has-text-centered">Denoising process for noisy scene.</h2>
         </div>
         <div class="item">
-          <video controls autoplay loop muted>
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+          <video controls autoplay loop muted style="height: 800px; width: auto; object-fit: contain;">
+            <source src="static/videos/teacup_teapot.mp4" type="video/mp4">
           </video>
-          <h2 class="subtitle has-text-centered">Third video description.</h2>
+          <h2 class="subtitle has-text-centered">Applying new context</h2>
+        </div>
+        <div class="item">
+          <video controls autoplay loop muted style="height: 800px; width: auto; object-fit: contain;">
+            <source src="static/videos/pan_salt_saker.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">Adding object + Applying new context</h2>
         </div>
       </div>
       
